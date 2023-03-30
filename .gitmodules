@@ -1,0 +1,4 @@
+[submodule "gamajun-client"]
+	path = gamajun-client
+	url = https://github.com/pan-sveta/gamajun-client
+	branch = main
