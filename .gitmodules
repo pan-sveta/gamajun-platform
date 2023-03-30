@@ -2,3 +2,7 @@
 	path = gamajun-client
 	url = https://github.com/pan-sveta/gamajun-client
 	branch = main
+[submodule "gamajun-server"]
+	path = gamajun-server
+	url = https://github.com/pan-sveta/gamajun-server
+	branch = master
