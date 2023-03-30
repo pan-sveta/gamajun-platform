@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+
+  gamajun-server:
+    build:
+        context: gamajun-server
+        dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - gamajun-server/.env
+    restart: always
+    depends_on:
+      - gamajun-db
+
+  gamajun-client:
+    build:
+      context: gamajun-client
+      dockerfile: Dockerfile
+    ports:
+        - "3000:3000"
+    env_file:
+      - gamajun-client/.env
+    restart: always
+    depends_on:
+      - gamajun-server
+
+  gamajun-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: gamajun
+      POSTGRES_USER: gamajun
+      POSTGRES_PASSWORD: gamajun
+    volumes:
+      - ./data:/var/lib/mysql
