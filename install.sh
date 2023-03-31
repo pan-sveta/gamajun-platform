@@ -49,5 +49,5 @@ echo "NEXT_PUBLIC_GAMAJUN_API_URL=http://$hostname:8080"
 } >> gamajun-client/.env
 
 echo "Čas na to rozjed docker kontejnery. To může chvíli trvat. 🐳⌛"
-docker-compose build
-docker-compose up
+docker compose build
+docker compose up
