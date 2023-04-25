@@ -8,7 +8,6 @@ Instructors can use this tool to create engaging lessons that reinforce students
 
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Environment Variables](#environment-variables)
 
 ## Requirements
 - Linux
