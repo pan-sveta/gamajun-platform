@@ -15,10 +15,14 @@ Instructors can use this tool to create engaging lessons that reinforce students
 - Docker-compose
 
 ## Installation
+***Warning: Due to OAuth2 presence, you always have to use device/public ip addresses (eg. ip address of the computer in local network, public ip address or domain); localhosts and loopbacks will not probably work***
+
 ### Guided 
 1. Clone the repository ```git clone  --recurse-submodules git@github.com:pan-sveta/gamajun-system.git```
 2. Add run privilidge ```chmod +x install.sh```
 3. Run the script ```./install.sh```
+
+***WSL Note: You have to clone directly from WSL (to get right line endings) and provide ip address from Windows not WSL (get it from ipconfig in CMD or use public ip address)***
 
 ### Manual 
 1. Clone the repository ```git clone  --recurse-submodules git@github.com:pan-sveta/gamajun-system.git```
