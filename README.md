@@ -10,18 +10,18 @@ Instructors can use this tool to create engaging lessons that reinforce students
 - [Installation](#installation)
 
 ## Requirements
-- Linux
+- Linux (WSL works well too!)
 - Docker
 - Docker-compose
 
 ## Installation
 ### Guided 
-1. Clone the repository ```git clone  --recurse-submodules git@github.com:pan-sveta/gamajun-platform.git```
+1. Clone the repository ```git clone  --recurse-submodules git@github.com:pan-sveta/gamajun-system.git```
 2. Add run privilidge ```chmod +x install.sh```
 3. Run the script ```./install.sh```
 
 ### Manual 
-1. Clone the repository ```git clone  --recurse-submodules git@github.com:pan-sveta/gamajun-platform.git```
+1. Clone the repository ```git clone  --recurse-submodules git@github.com:pan-sveta/gamajun-system.git```
 2. Configure environment variables in gamajun-client and gamajun-server
 3. Build the image ```docker compose build```
 4. Run the container ```docker compose run```
